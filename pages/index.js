@@ -8,7 +8,7 @@ import Widgets from '../components/Widgets';
 import signIn from './auth/signin';
 
 export default function Home( { session } ) {
-  if (!session) return <Login />
+  
   return (
     <div className=''>
       <Head>
@@ -16,12 +16,10 @@ export default function Home( { session } ) {
       </Head>
     {/* Header */}
     <Header />
+   
     <main className='flex bg-gray-100'>
-      {/* Sidebar */}
       <Sidebar />
-      {/* Feed */}
       <Feed />
-      {/* Widgets */}
       <Widgets />
     </main>
     </div>
